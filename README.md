@@ -11,7 +11,8 @@ The aim is to let main verticle reaches a state which it's unable to handle anym
 
 Then, Cluster design jumps in and demonstrate how it will solve the problem. 
 ## Project Architecture (Maven project)
-|src
+
+.src
      
      \
       
