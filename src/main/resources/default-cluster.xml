@@ -17,10 +17,7 @@
             Allowed port range when connecting to other nodes.
             0 or * means use system provided port.
             -->
-            <!--<ports>*</ports>-->
-            <ports>33000-35000</ports>   <!-- ports between 33000 and 35000 -->
-            <ports>37000,37001,37002,37003</ports> <!-- comma separated ports -->
-            <ports>38000,38500-38600</ports>
+            <ports>*</ports>
         </outbound-ports>
         <join>
             <multicast enabled="false">
@@ -28,15 +25,16 @@
                 <multicast-port>54327</multicast-port>
             </multicast>
             <tcp-ip enabled="true">
-                <interface>192.168.130.41</interface>
-                <interface>192.168.150.193</interface>
+                <member>192.168.150.193</member>
+                <member>192.168.130.21</member>
+                <!--<interface>192.168.130.21</interface>-->
+                <!--<interface>192.168.150.193</interface>-->
             </tcp-ip>
             <aws enabled="false">
             </aws>
         </join>
         <interfaces enabled="false">
-            <interface>192.168.110.*</interface>
-            <interface>192.168.150.*</interface>
+            <interface>192.168.130.*</interface>
             <interface>192.168.150.*</interface>
         </interfaces>
     </network>
